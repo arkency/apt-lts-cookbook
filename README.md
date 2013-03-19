@@ -6,11 +6,11 @@ Enables [backports](http://backports-master.debian.org/) repository for Debian.
 Attributes
 ----------
 
-- `node['apt-backports']['distribution']`
+- `node['apt_backports']['distribution']`
 
 Defaults to `squeeze-backports`. Backports release codename suitable for your debian installation.
 
-- `node['apt-backports']['mirror']`
+- `node['apt_backports']['mirror']`
 
 Defaults to `http://backports.debian.org/debian-backports`. Backport repository mirror URI you'd like to use.
 

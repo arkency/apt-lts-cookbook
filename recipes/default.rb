@@ -1,5 +1,5 @@
-distribution = node['apt-backports']['distribution']
-mirror       = node['apt-backports']['mirror']
+distribution = node['apt_backports']['distribution']
+mirror       = node['apt_backports']['mirror']
 
 apt_repository distribution do
   uri mirror
