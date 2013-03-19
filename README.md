@@ -6,11 +6,11 @@ Enables [backports](http://backports-master.debian.org/) repository for Debian.
 Attributes
 ----------
 
-- `node['apt']['backports']['distribution']`
+- `node['apt-backports']['distribution']`
 
 Defaults to `squeeze-backports`. Backports release codename suitable for your debian installation.
 
-- `node['apt']['backports']['mirror']`
+- `node['apt-backports']['mirror']`
 
 Defaults to `http://backports.debian.org/debian-backports`. Backport repository mirror URI you'd like to use.
 
@@ -18,19 +18,17 @@ Defaults to `http://backports.debian.org/debian-backports`. Backport repository 
 Usage
 -----
 
-Just include `apt::backports` in your node's `run_list`. Optionally specify `distribution` and `mirror`.
+Just include `apt-backports` in your node's `run_list`. Optionally specify `distribution` and `mirror`.
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[apt::backports]"
+    "recipe[apt-backports]"
   ],
-  "apt": {
-    "backports": {
-      "distribution": "squeeze-backports",
-      "mirror": "http://YOURMIRROR.debian.org/debian-backports"
-    }
+  "apt-backports": {
+    "distribution": "squeeze-backports",
+    "mirror": "http://YOURMIRROR.debian.org/debian-backports"
   }
 }
 ```
