@@ -26,7 +26,7 @@ Just include `apt-backports` in your node's `run_list`. Optionally specify `dist
   "run_list": [
     "recipe[apt-backports]"
   ],
-  "apt-backports": {
+  "apt_backports": {
     "distribution": "squeeze-backports",
     "mirror": "http://YOURMIRROR.debian.org/debian-backports"
   }
