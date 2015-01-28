@@ -38,7 +38,7 @@ License and Authors
 
 Author:: Arkency <dev@arkency.com>
 
-Copyright 2013, Arkency
+Copyright 2015, Arkency
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
